@@ -7,12 +7,12 @@
   </head>
   <body>
     <div>
-      <form id="scrWelcome">
+      <form id="scr-Welcome" class="aparece">
         <h1>Welcome!</h1>
         <h2>Esta aplicación te permitirá escribir un mensaje y cifrarlo mediante una clave</h2>
-        <button id="btnStart">Empezar</button>
+        <button id="btn-start">Empezar</button>
       </form>
-      <form id="scrCipher">
+      <form id="scr-Cipher" class="oculto">
         <label for="num-offset">Coloca aquí el número de la clave para ocultar o mostrar el mensaje:</label>
         <input type="number" id="num-offset">
         <label for="msg-encryp">Coloca aquí tu mensaje:</label>  
@@ -22,10 +22,10 @@
           <button id="btn-decode">Descubre el mensaje</button>
         </div>
       </form>
-      <form id="scrGoodBye">
+      <form id="scr-GoodBye" class="oculto">
         <div>
-          <label for="btn-answer">Este es el mensaje:</label>
-          <input id="btn-answer">
+          <label for="msg-answer">Este es el mensaje:</label>
+          <input id="msg-answer">
         </div>
         <div>
           <label>Gracias por usar [NameApp]</label>

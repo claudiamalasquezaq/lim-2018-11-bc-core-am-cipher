@@ -1,3 +1,7 @@
-div {
-	align-content: center;
+.oculto {
+	display:none;
+}
+
+.aparece {
+	display:block;
 }
