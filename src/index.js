@@ -12,56 +12,111 @@ const btnReturn = document.getElementById("btn-return");
 const msgAnswer = document.getElementById("msg-answer");
 
 
-function apSgtePantalla() {
-  scrCipher.classList.add("aparece");
-  scrCipher.classList.remove("oculto");
-  scrWelcome.classList.add("oculto");
-  scrWelcome.classList.remove("aparece");
-}
-
-function returnHome() {
-  scrWelcome.classList.remove("oculto");
-  scrWelcome.classList.add("aparece");
-  scrGoodBye.classList.remove("aparece");
-  scrGoodBye.classList.add("oculto");
-}
-
-function cipherEncode(msgEncryp,numOffset){
+const cipherEncode = (msgEncryp,numOffset) => {
   	let cadena = "";
-	for(let i = 0; i < msgEncryp.length; i++){
+		for(let i = 0; i < msgEncryp.length; i++){
 	    let pAsc = msgEncryp.charCodeAt(i);
 	    if (pAsc === 32){
 	      cadena = cadena + " ";
-	      console.log(cadena);
 	    } else {
-		  let fCifrar = (pAsc - 65 + parseInt(numOffset)) % 26 + 65;
-		  let palCifrada = String.fromCharCode(fCifrar);
-		  cadena = cadena + palCifrada;
-		  console.log(cadena);
-		//}
+			  let fCifrar = (pAsc - 65 + parseInt(numOffset)) % 26 + 65;
+			  let palCifrada = String.fromCharCode(fCifrar);
+			  cadena = cadena + palCifrada;
+			}	
+		}
+	msgAnswer.innerHTML = cadena;
+}
+
+const cipherDecode = (msgEncryp, numOffset) => {
+	let cadena = "";
+	for (let i = 0; i < msgEncryp.length; i++){
+		let pAsc = msgEncryp.charCodeAt(i);
+		if (pAsc === 32){
+			cadena = cadena + " ";
+		} else {
+			let fCifrar=(pAsc - 65 - parseInt(numOffset)) % 26 + 65;
+			if (fCifrar < 65){
+				let menorA = fCifrar + 26;
+				let palCifrada = String.fromCharCode(menorA);
+				cadena = cadena + palCifrada;
+			} else {
+				let palCifrada = String.fromCharCode(fCifrar);
+				cadena = cadena + palCifrada;
+			}
+		}
 	}
-	msgAnswer.innerHTML = cadena;	
-}
-}
-
-function sendDecrypted() {
-
-	if (numOffset.value <= 0){
-		alert('Ingresar un número positivo');
-	} else if (numOffset.value === 0) {
-		alert('Si ingresas como código el número 0, el texto no podrá ser cifrado');
-	} else {
-		cipherEncode();
-	}
+	msgAnswer.innerHTML = cadena;
 }
 
 
+btnStart.addEventListener("click", () => {
+  scrCipher.classList.add("show");
+  scrCipher.classList.remove("unseen");
+  scrWelcome.classList.add("unseen");
+  scrWelcome.classList.remove("show");
+  document.getElementById("num-offset").value="";
+  document.getElementById("msg-encryp").value="";
+});
 
-btnStart.addEventListener("click", apSgtePantalla);
-btnReturn.addEventListener("click", returnHome);
 btnEncode.addEventListener("click", () => {
 	const numOffset = document.getElementById("num-offset").value;
-	const msgEncryp = document.getElementById("msg-encryp").value;
+	const msgEncryp = document.getElementById("msg-encryp").value.toUpperCase();
+	if (numOffset ==""){
+		alert('Ingresa un número de clave');
+	} else {
+			if (numOffset < 0){
+			alert('Ingresar un número positivo');
+		} else if (numOffset == 0) {
+			alert('Si ingresas como código el número 0, el texto no podrá ser cifrado');
+		} else {
+			if (msgEncryp =="") {
+				alert('Ingresa un mensaje.');
+			} else {
+				cipherEncode(msgEncryp, numOffset);
+				scrCipher.classList.add("unseen");
+				scrCipher.classList.remove("show");
+				scrGoodBye.classList.add("show");
+				scrGoodBye.classList.remove("unseen");
+			}
+		}
+	}
+});
 
-	cipherEncode(msgEncryp, numOffset);
+btnDecode.addEventListener("click", () => {
+	const numOffset = document.getElementById("num-offset").value;
+	const msgEncryp = document.getElementById("msg-encryp").value.toUpperCase();
+	if (numOffset ==""){
+		alert('Ingresa un número de clave');
+	} else {
+			if (numOffset < 0){
+			alert('Ingresar un número positivo');
+		} else if (numOffset == 0) {
+			alert('Si ingresas como código el número 0, el texto no podrá ser cifrado');
+		} else {
+			if (msgEncryp =="") {
+				alert('Ingresa un mensaje.');
+			} else {
+				cipherDecode(msgEncryp, numOffset);
+				scrCipher.classList.add("unseen");
+				scrCipher.classList.remove("show");
+				scrGoodBye.classList.add("show");
+				scrGoodBye.classList.remove("unseen");
+			}
+		}
+	}
+});
+
+
+
+
+
+
+
+
+
+btnReturn.addEventListener("click", () => {
+  scrWelcome.classList.remove("unseen");
+  scrWelcome.classList.add("show");
+  scrGoodBye.classList.remove("show");
+  scrGoodBye.classList.add("unseen");
 });
