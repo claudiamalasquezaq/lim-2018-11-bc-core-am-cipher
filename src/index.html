@@ -2,33 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Security App</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="https://geoinnova.org/wp-content/uploads/2018/03/candado.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter|Catamaran|PT+Sans+Narrow|Yanone+Kaffeesatz" />
   </head>
   <body>
-    <div>
-      <form id="scr-Welcome" class="show">
-        <h1>Welcome!</h1>
-        <h2>Esta aplicación te permitirá escribir un mensaje y cifrarlo mediante una clave</h2>
-        <button id="btn-start" type="button">Empezar</button>
+    <div class="text-center">
+      <h1 class="main-title">SECURITY APP</h1>
+      <form id="scr-Welcome" class="show text-center">
+        <h1>¡Bienvenidos!</h1>
+        <img src="https://www.zoomtecnologico.com/wp-content/uploads/2017/10/contrase%C3%B1as.jpg" class="img-responsive">
+        <h2>Security App es una aplicación que te permitirá </h2>
+        <button id="btn-start" type="button" class="btn">Empezar</button>
       </form>
-      <form id="scr-Cipher" class="unseen">
-        <label for="num-offset">Coloca aquí el número de la clave para ocultar o mostrar el mensaje:</label>
-        <input type="number" id="num-offset">
-        <label for="msg-encryp">Coloca aquí tu mensaje:</label>  
-        <input id="msg-encryp">
+      <form id="scr-Cipher" class="unseen text-center">
+        <div>
+          <label for="num-offset">Coloca aquí el número de la clave para ocultar o mostrar el mensaje:</label>
+          <input type="number" id="num-offset">
+        </div>
+        <div>
+          <label for="msg-encryp">Coloca aquí tu mensaje:</label><input id="msg-encryp">
+        </div>
         <div>
           <button id="btn-encode" type="button">Oculta el mensaje</button>
           <button id="btn-decode" type="button">Descubre el mensaje</button>
         </div>
       </form>
-      <form id="scr-GoodBye" class="unseen">
+      <form id="scr-GoodBye" class="unseen text-center">
         <div>
           <label>Este es el mensaje:</label>
           <p id="msg-answer"></p>
         </div>
         <div>
-          <label>Gracias por usar [NameApp]</label>
+          <label>Gracias por usar Security App</label>
           <p>
             <label>¿Sabías qué...?</label>
             <label>[Dato curioso Código Enigma]</label>
