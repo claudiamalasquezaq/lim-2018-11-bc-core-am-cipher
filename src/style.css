@@ -1,7 +1,61 @@
+/*body {
+	background-image: url('http://3.bp.blogspot.com/-1XdXKr0ovVE/VLNdyZnwUpI/AAAAAAAAABw/XU_nkhXu8dI/s1600/textura%2C%2Bcolores%2C%2Bpastel.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}*/
+/*Estilo para el título principal */
+.main-title {
+  color: white;
+  background: #005BBB;
+  border-radius: 3px;
+  font-family: 'PT Sans Narrow';
+  font-size: 40px;
+}
+/*Estilo para el formulario que está oculto*/
 .unseen {
 	display:none;
 }
-
+/*Estilo para el formulario que está visible*/
 .show {
 	display:block;
+}
+/*Estilo para el formulario y todo esté alineado al centro*/
+.text-center {
+	text-align: center;
+}
+/*Estilo para que la imagen sea responsive*/
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+/*Estilo para los botones*/
+button {
+	width:auto;
+	font-weight: 600;
+	font-size: 16px;
+	color: #CACFD2;
+	padding: 15px 80px 15px 80px;
+	background-color: rgb(52, 152, 219);
+	border-radius: 5px;
+}
+h1 {
+	font-family: 'Bitter';
+}
+h2 {
+	font-family: 'Yanone Kaffeesatz';
+	font-size: 30px;
+}
+img {
+	margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  width: 400px;
+}
+label, input, button {
+	margin-top: 20px;
+}
+label {
+ font-family: 'Catamaran';
+ font-size: 20px;
 }
