@@ -8,9 +8,7 @@ const btnEncode = document.getElementById("btn-encode");
 const btnDecode = document.getElementById("btn-decode");
 const btnReturn = document.getElementById("btn-return");
 //Cajas de texto
-
 const msgAnswer = document.getElementById("msg-answer");
-
 
 const cipherEncode = (msgEncryp,numOffset) => {
   	let cadena = "";
@@ -72,7 +70,7 @@ btnEncode.addEventListener("click", () => {
 			if (msgEncryp =="") {
 				alert('Ingresa un mensaje.');
 			} else {
-				cipherEncode(msgEncryp, numOffset);
+				cipherEncode (msgEncryp,numOffset);
 				scrCipher.classList.add("unseen");
 				scrCipher.classList.remove("show");
 				scrGoodBye.classList.add("show");
@@ -105,13 +103,6 @@ btnDecode.addEventListener("click", () => {
 		}
 	}
 });
-
-
-
-
-
-
-
 
 
 btnReturn.addEventListener("click", () => {
