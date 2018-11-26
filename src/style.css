@@ -54,8 +54,24 @@ img {
 }
 label, input, button {
 	margin-top: 20px;
+	margin-left: 30px;
 }
 label {
  font-family: 'Catamaran';
  font-size: 20px;
+ height: 20px;
+}
+
+input {
+	background-color: #d8ecf7;
+	border: 2px solid #0D5D89;
+	border-radius: 2px;
+	font-family: 'Ubuntu';
+	font-size: 20px;
+	margin-bottom: 80px;
+	width: auto;
+}
+#msg-answer{
+	font-size: 25px;
+	font-family: 'Cabin';
 }
