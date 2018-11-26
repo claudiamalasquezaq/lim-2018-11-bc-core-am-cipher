@@ -5,7 +5,7 @@
     <title>Security App</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="https://geoinnova.org/wp-content/uploads/2018/03/candado.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter|Catamaran|PT+Sans+Narrow|Yanone+Kaffeesatz" />
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Cabin|Catamaran|PT+Sans+Narrow|Ubuntu|Yanone+Kaffeesatz" rel="stylesheet">
   </head>
   <body>
     <div class="text-center">
@@ -19,11 +19,13 @@
       <form id="scr-Cipher" class="unseen text-center">
         <div>
           <label for="num-offset">Coloca aquí el número de la clave para ocultar o mostrar el mensaje:</label>
-          <input type="number" id="num-offset">
         </div>
+        <input type="number" id="num-offset">
+        
         <div>
-          <label for="msg-encryp">Coloca aquí tu mensaje:</label><input id="msg-encryp">
+          <label for="msg-encryp">Coloca aquí tu mensaje:</label>
         </div>
+        <input id="msg-encryp">
         <div>
           <button id="btn-encode" type="button">Oculta el mensaje</button>
           <button id="btn-decode" type="button">Descubre el mensaje</button>
