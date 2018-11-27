@@ -10,43 +10,7 @@ const btnReturn = document.getElementById("btn-return");
 //Cajas de texto
 const msgAnswer = document.getElementById("msg-answer");
 
-const cipherEncode = (msgEncryp,numOffset) => {
-  	let cadena = "";
-		for(let i = 0; i < msgEncryp.length; i++){
-	    let pAsc = msgEncryp.charCodeAt(i);
-	    if (pAsc === 32){
-	      cadena = cadena + " ";
-	    } else {
-			  let fCifrar = (pAsc - 65 + parseInt(numOffset)) % 26 + 65;
-			  let palCifrada = String.fromCharCode(fCifrar);
-			  cadena = cadena + palCifrada;
-			}	
-		}
-	msgAnswer.innerHTML = cadena;
-}
-
-const cipherDecode = (msgEncryp, numOffset) => {
-	let cadena = "";
-	for (let i = 0; i < msgEncryp.length; i++){
-		let pAsc = msgEncryp.charCodeAt(i);
-		if (pAsc === 32){
-			cadena = cadena + " ";
-		} else {
-			let fCifrar=(pAsc - 65 - parseInt(numOffset)) % 26 + 65;
-			if (fCifrar < 65){
-				let menorA = fCifrar + 26;
-				let palCifrada = String.fromCharCode(menorA);
-				cadena = cadena + palCifrada;
-			} else {
-				let palCifrada = String.fromCharCode(fCifrar);
-				cadena = cadena + palCifrada;
-			}
-		}
-	}
-	msgAnswer.innerHTML = cadena;
-}
-
-
+//Botón 'Start' del formulario 'scrWelcome'
 btnStart.addEventListener("click", () => {
   scrCipher.classList.add("show");
   scrCipher.classList.remove("unseen");
@@ -56,21 +20,23 @@ btnStart.addEventListener("click", () => {
   document.getElementById("msg-encryp").value="";
 });
 
+//Botón 'Oculta el mensaje' del formulario 'scrCipher'
 btnEncode.addEventListener("click", () => {
-	const numOffset = document.getElementById("num-offset").value;
-	const msgEncryp = document.getElementById("msg-encryp").value.toUpperCase();
-	if (numOffset ==""){
+	const offset = document.getElementById("num-offset").value;
+	const string = document.getElementById("msg-encryp").value.toUpperCase();
+	if (offset ==""){
 		alert('Ingresa un número de clave');
 	} else {
-			if (numOffset < 0){
+			if (offset < 0){
 			alert('Ingresar un número positivo');
-		} else if (numOffset == 0) {
+		} else if (offset == 0) {
 			alert('Si ingresas como código el número 0, el texto no podrá ser cifrado');
 		} else {
-			if (msgEncryp =="") {
+			if (string =="") {
 				alert('Ingresa un mensaje.');
 			} else {
-				cipherEncode (msgEncryp,numOffset);
+				const cipherEnc = cipher.encode (offset, string);
+				msgAnswer.innerHTML = cipherEnc;
 				scrCipher.classList.add("unseen");
 				scrCipher.classList.remove("show");
 				scrGoodBye.classList.add("show");
@@ -80,21 +46,23 @@ btnEncode.addEventListener("click", () => {
 	}
 });
 
+//Botón 'Descifra el mensaje' del formulario 'scrCipher'
 btnDecode.addEventListener("click", () => {
-	const numOffset = document.getElementById("num-offset").value;
-	const msgEncryp = document.getElementById("msg-encryp").value.toUpperCase();
-	if (numOffset ==""){
+	const offset = document.getElementById("num-offset").value;
+	const string = document.getElementById("msg-encryp").value.toUpperCase();
+	if (offset ==""){
 		alert('Ingresa un número de clave');
 	} else {
-			if (numOffset < 0){
+			if (offset < 0){
 			alert('Ingresar un número positivo');
-		} else if (numOffset == 0) {
+		} else if (offset == 0) {
 			alert('Si ingresas como código el número 0, el texto no podrá ser cifrado');
 		} else {
-			if (msgEncryp =="") {
+			if (string =="") {
 				alert('Ingresa un mensaje.');
 			} else {
-				cipherDecode(msgEncryp, numOffset);
+				const cipherDec = cipher.decode (offset, string);
+				msgAnswer.innerHTML = cipherDec;
 				scrCipher.classList.add("unseen");
 				scrCipher.classList.remove("show");
 				scrGoodBye.classList.add("show");
@@ -104,7 +72,7 @@ btnDecode.addEventListener("click", () => {
 	}
 });
 
-
+//Botón 'Volver a escribir un mensaje' del formulario 'scrGoodBye'
 btnReturn.addEventListener("click", () => {
   scrWelcome.classList.remove("unseen");
   scrWelcome.classList.add("show");
