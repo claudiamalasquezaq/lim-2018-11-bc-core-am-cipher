@@ -22,7 +22,7 @@ btnStart.addEventListener("click", () => {
 
 //Botón 'Oculta el mensaje' del formulario 'scrCipher'
 btnEncode.addEventListener("click", () => {
-	const offset = document.getElementById("num-offset").value;
+	const offset = parseInt(document.getElementById("num-offset").value);
 	const string = document.getElementById("msg-encryp").value.toUpperCase();
 	if (offset ==""){
 		alert('Ingresa un número de clave');
