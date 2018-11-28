@@ -14,7 +14,10 @@ window.cipher = {
 		let cadena = "";
 		for (let i = 0; i < string.length; i++){
 			let positionAsc = string.charCodeAt(i);
-			let fDescifrar=(positionAsc - 65 - offset) % 26 + 65;
+			let fDescifrar = (positionAsc - 65 - offset) % 26 + 65;
+			if (fDescifrar < 65){
+				fDescifrar = fDescifrar + 26;
+			} 
 			let palDescifrada = String.fromCharCode(fDescifrar);
 			cadena = cadena + palDescifrada;
 		}
