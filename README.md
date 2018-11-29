@@ -43,7 +43,7 @@ El diseño de la aplicación fue mediante un previo análisis del significado de
 Ha sido diseñado para que el usuario tenga la confianza de poder cifrar y descifrar sus contraseñas.
 
 
-##Más sobre Security App
+## Más sobre Security App
 
 **Security App** te permitirá hacer un cifrado de todas las cuentas que tengas.
 
