@@ -1,8 +1,6 @@
-/*body {
-	background-image: url('http://3.bp.blogspot.com/-1XdXKr0ovVE/VLNdyZnwUpI/AAAAAAAAABw/XU_nkhXu8dI/s1600/textura%2C%2Bcolores%2C%2Bpastel.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-}*/
+body {
+	background-color: #668ba4;
+}
 /*Estilo para el título principal */
 .main-title {
   color: white;
@@ -29,6 +27,10 @@
 	max-width: 100%;
 	height: auto;
 }
+/*Estilo para los label que dan instrucciones*/
+.instruction {
+	font-style: italic;
+}
 /*Estilo para los botones*/
 button {
 	width:auto;
@@ -36,32 +38,41 @@ button {
 	font-size: 16px;
 	color: #CACFD2;
 	padding: 15px 80px 15px 80px;
-	background-color: rgb(52, 152, 219);
+	/*background-color: rgb(52, 152, 219);*/
+	background-color: #505054;
 	border-radius: 5px;
+	margin-top: 20px;
+	margin-left: 30px;
+	text-align: center;
 }
+/*Estilo para los h1*/
 h1 {
 	font-family: 'Bitter';
 }
+/*Estilo para los h2*/
 h2 {
 	font-family: 'Yanone Kaffeesatz';
 	font-size: 30px;
+	text-align: center;
+	width: 500px;
+	padding-left: auto;
 }
+/*Estilo para las imágenes*/
 img {
 	margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
   width: 400px;
 }
-label, input, button {
+/*Estilo para los label*/
+label {
+	font-family: 'Catamaran';
+	font-size: 20px;
+	height: 20px;
 	margin-top: 20px;
 	margin-left: 30px;
 }
-label {
- font-family: 'Catamaran';
- font-size: 20px;
- height: 20px;
-}
-
+/*Estilo para los input*/
 input {
 	background-color: #d8ecf7;
 	border: 2px solid #0D5D89;
@@ -70,8 +81,13 @@ input {
 	font-size: 20px;
 	margin-bottom: 80px;
 	width: auto;
+	height: 50px;
+	margin-top: 20px;
+	margin-left: 30px;
 }
-#msg-answer{
-	font-size: 25px;
-	font-family: 'Cabin';
+/*Estilo para el lugar donde saldrá el resultado*/
+#msg-answer {
+	font-size: 30px;
+	font-family: 'Dosis';
+	font-weight: bold; 
 }
