@@ -51,7 +51,7 @@ Tener una contraseña por cada cuenta que tienes en Internet es lo que se recomi
 
 Los pasos para usar _SECURITY APP_ son los siguientes:
 1. Debes hacer click en "Empezar".
-![Pantalla de Inicio](https://ibb.co/QNc8jG8)
+![Pantalla de Inicio](https://lh6.googleusercontent.com/ea_7mXpx023XCx0H_ozWxp2O8wAnePPxmFJQCukNg0lqlBUKzF0qmDtCbIo3q1EllbO26hsXqOlf1Pe5JAtW=w1366-h657-rw)
 2. Aparecerá una pantalla, donde te pedirá que coloques un número como clave, ese código es muy importante, te permitirá cifrar y descifrar tu contraseña.
 3. Una vez ingresada esa clave, debes ingresar tu contraseña y dependiendo de lo que quieras hacer (cifrar o descifrar) presionas los botones "Ocultar" para cifrarla y "Mostrar" para descifrar.
 4. Después de hacer clic en alguno de esos botones, saldrá una pantalla con la contraseña cifrada o descifrada.  Si haces clic en "Volver" para regresar a cifrar y descifrar una contraseña.
