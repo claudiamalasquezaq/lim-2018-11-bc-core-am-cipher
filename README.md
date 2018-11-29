@@ -50,10 +50,17 @@ Ha sido diseñado para que el usuario tenga la confianza de poder cifrar y desci
 Tener una contraseña por cada cuenta que tienes en Internet es lo que se recomienda, pero quizás tienes en todas las cuentas la misma contraseña porque es la que recuerdas y no quieres pasar por el tedioso _"Olvidé mi contraseña"_, que no siempre te permite recuperar tu cuenta.  Entonces, puedes tener las contraseñas que desees, pero para guardarlas en algún lugar, deben estar cifradas, y debes decifrarlas luego también.
 
 Los pasos para usar _SECURITY APP_ son los siguientes:
-1. Debes hacer click en "Empezar".
+1. Debes hacer click en _"Empezar"_.
 ![Pantalla de Inicio](https://i.ibb.co/G2Js3js/scr-Welcome.jpg)
 2. Aparecerá una pantalla, donde te pedirá que coloques un número como clave, ese código es muy importante, te permitirá cifrar y descifrar tu contraseña.
+![Pantalla de cifrado y descifrado](https://i.ibb.co/cxxGxKG/scr-Cipher.jpg)
 3. Una vez ingresada esa clave, debes ingresar tu contraseña y dependiendo de lo que quieras hacer (cifrar o descifrar) presionas los botones "Ocultar" para cifrarla y "Mostrar" para descifrar.
-4. Después de hacer clic en alguno de esos botones, saldrá una pantalla con la contraseña cifrada o descifrada.  Si haces clic en "Volver" para regresar a cifrar y descifrar una contraseña.
+![Ejemplo de cifrado](https://i.ibb.co/5YcXVR2/scr-Ciphere-Ejm.jpg)
+4. Después de hacer clic en alguno de esos botones, saldrá una pantalla con la contraseña cifrada o descifrada.  
+![Pantalla de Despedida](https://i.ibb.co/dWF1bx3/scr-Good-Bye-Ejm.jpg)
+5. Si haces clic en "Volver", regresarás a cifrar y descifrar una contraseña.
+![Ejemplo de clic volver](https://i.ibb.co/NFRKvQX/scr-Ciphere-Ejm1.jpg)
+![Ejemplo de descifrado](https://i.ibb.co/5GbpHRQ/scr-Good-Bye-Ejm1.jpg)
+
 
 Y eso es todo, ahora podrás tener tus contraseñas seguras, pero recuerda saber o anotar el número de clave que le pones a cada contraseña, por eso te recomendamos que puedas almacenarlas en algún archivo.
