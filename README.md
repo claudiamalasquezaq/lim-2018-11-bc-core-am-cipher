@@ -1,7 +1,6 @@
 # SECURITY APP
 
-![iconoApp](https://geoinnova.org/wp-content/uploads/2018/03/candado.png)
-
+## Introducción
 Imagina que tienes una cuenta en Google, Facebook, Instragram, Snapchat y en más lugares donde puedes crear cuentas.  Tienes todas tus cuentas abiertas todo el tiempo en tu celular o computadora, pero imagina que por alguna razón las perdiste, pero claro, no hay problema, porque quizás uses la misma contraseña para todas tus cuentas.  
 _¿Has pensado si tener una sola clave para todas tus cuentas no es nada seguro?_
 
@@ -44,6 +43,16 @@ El diseño de la aplicación fue mediante un previo análisis del significado de
 Ha sido diseñado para que el usuario tenga la confianza de poder cifrar y descifrar sus contraseñas.
 
 
+##Más sobre Security App
 
+**Security App** te permitirá hacer un cifrado de todas las cuentas que tengas.
 
-**Security App** te permite cifrar tus contraseñas 
+Tener una contraseña por cada cuenta que tienes en Internet es lo que se recomienda, pero quizás tienes en todas las cuentas la misma contraseña porque es la que recuerdas y no quieres pasar por el tedioso _"Olvidé mi contraseña"_, que no siempre te permite recuperar tu cuenta.  Entonces, puedes tener las contraseñas que desees, pero para guardarlas en algún lugar, deben estar cifradas, y debes decifrarlas luego también.
+
+Los pasos para usar _SECURITY APP_ son los siguientes:
+1. Debes hacer click en "Empezar".
+2. Aparecerá una pantalla, donde te pedirá que coloques un número como clave, ese código es muy importante, te permitirá cifrar y descifrar tu contraseña.
+3. Una vez ingresada esa clave, debes ingresar tu contraseña y dependiendo de lo que quieras hacer (cifrar o descifrar) presionas los botones "Ocultar" para cifrarla y "Mostrar" para descifrar.
+4. Después de hacer clic en alguno de esos botones, saldrá una pantalla con la contraseña cifrada o descifrada.  Si haces clic en "Volver" para regresar a cifrar y descifrar una contraseña.
+
+Y eso es todo, ahora podrás tener tus contraseñas seguras, pero recuerda saber o anotar el número de clave que le pones a cada contraseña, por eso te recomendamos que puedas almacenarlas en algún archivo.
