@@ -16,8 +16,6 @@ btnStart.addEventListener("click", () => {
   scrCipher.classList.remove("unseen");
   scrWelcome.classList.add("unseen");
   scrWelcome.classList.remove("show");
-  document.getElementById("num-offset").value="";
-  document.getElementById("msg-encryp").value="";
 });
 
 //Botón 'Oculta el mensaje' del formulario 'scrCipher'
@@ -74,8 +72,10 @@ btnDecode.addEventListener("click", () => {
 
 //Botón 'Volver a escribir un mensaje' del formulario 'scrGoodBye'
 btnReturn.addEventListener("click", () => {
-  scrWelcome.classList.remove("unseen");
-  scrWelcome.classList.add("show");
+  scrCipher.classList.remove("unseen");
+  scrCipher.classList.add("show");
   scrGoodBye.classList.remove("show");
   scrGoodBye.classList.add("unseen");
+  document.getElementById("num-offset").value="";
+  document.getElementById("msg-encryp").value="";
 });
