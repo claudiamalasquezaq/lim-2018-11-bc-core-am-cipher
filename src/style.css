@@ -1,6 +1,5 @@
 body {
-	background-color: #668ba4;
-	/*3498DB*/
+	background-color: #549ccc;
 }
 /*Estilo para el título principal */
 .main-title {
@@ -32,7 +31,7 @@ body {
 .instruction {
 	font-style: italic;
 	font-size: 20px;
-	color: #CACFD2;
+	color: #DFD7B9;
 }
 /*Estilo para los botones*/
 button {
