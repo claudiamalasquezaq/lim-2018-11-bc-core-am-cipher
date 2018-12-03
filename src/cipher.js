@@ -3,9 +3,9 @@ window.cipher = {
 		let cadena = "";
 		for(let i = 0; i < string.length; i++){
 			let positionAsc = string.charCodeAt(i);
-			let fCifrar = (positionAsc - 65 + offset) % 26 + 65;
-			let palCifrada = String.fromCharCode(fCifrar);
-			cadena = cadena + palCifrada;	
+			let fEncode = (positionAsc - 65 + offset) % 26 + 65;
+			let lettEncode = String.fromCharCode(fEncode);
+			cadena = cadena + lettEncode;	
 			
 		}
 	return cadena;	
@@ -14,12 +14,12 @@ window.cipher = {
 		let cadena = "";
 		for (let i = 0; i < string.length; i++){
 			let positionAsc = string.charCodeAt(i);
-			let fDescifrar = (positionAsc - 65 - offset) % 26 + 65;
-			if (fDescifrar < 65){
-				fDescifrar = fDescifrar + 26;
+			let fDecode = (positionAsc - 65 - offset) % 26 + 65;
+			if (fDecode < 65){
+				fDecode = fDecode + 26;
 			} 
-			let palDescifrada = String.fromCharCode(fDescifrar);
-			cadena = cadena + palDescifrada;
+			let lettDecode = String.fromCharCode(fDecode);
+			cadena = cadena + lettDecode;
 		}
 	return cadena;
 	}
