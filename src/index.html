@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Security App</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="https://geoinnova.org/wp-content/uploads/2018/03/candado.png" />
-    <link href="https://fonts.googleapis.com/css?family=Bitter|Catamaran|Dosis|PT+Sans+Narrow|Ubuntu|Yanone+Kaffeesatz" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Catamaran|Dosis|PT+Sans+Narrow|Ubuntu|Yanone+Kaffeesatz" rel="stylesheet" />
   </head>
   <body>
     <div class="text-center">
       <h1 class="main-title">SECURITY APP</h1>
-      <form id="scr-Welcome" class="show text-center">
+      <form id="scr-welcome" class="show text-center">
         <h1>¡Bienvenidos!</h1>
-        <img src="https://www.zoomtecnologico.com/wp-content/uploads/2017/10/contrase%C3%B1as.jpg" class="img-responsive">
+        <img alt="Imagen de seguridad contraseñas" src="https://www.zoomtecnologico.com/wp-content/uploads/2017/10/contrase%C3%B1as.jpg" class="img-responsive" />
         <h2>Security App es una aplicación que te permitirá hacer un cifrado de tus contraseñas de las cuentas que tengas o todas tus claves en general.</h2>
         <h3>Debes hacer click en "Empezar"</h3>
         <button id="btn-start" type="button" class="btn">Empezar</button>
       </form>
-      <form id="scr-Cipher" class="unseen text-center">
+      <form id="scr-cipher" class="unseen text-center">
         <div>
           <label for="num-offset">Coloca aquí tu código de seguridad para cifrar tu contraseña:
           </label>
@@ -25,20 +25,22 @@
         <div>
           <label class="instruction">*Este código debe ser un número, es importante, nos ayudará a cifrar o descifrar tu contraseña.</label>
         </div>
-        <input type="number" id="num-offset">
+        <input type="number" id="num-offset" />
+        <label id="warning-offset"></label>
         <div>
           <label for="msg-encryp">Coloca aquí la contraseña que quieres cifrar o descifrar:</label>
         </div>
         <div>
           <label class="instruction">*Ingresa la contraseña que quieres usar, haz click en "Ocultar" si quieres cifrar y "Mostrar" si quieres descifrar.</label>
         </div>
-        <input id="msg-encryp">
+        <input id="msg-encryp" />
         <div>
+          <label id="warning-string"></label>
           <button id="btn-encode" type="button">Ocultar</button>
           <button id="btn-decode" type="button">Mostrar</button>
         </div>
       </form>
-      <form id="scr-GoodBye" class="unseen text-center">
+      <form id="scr-goodBye" class="unseen text-center">
         <div>
           <label>Este es el mensaje:</label>
           <p id="msg-answer"></p>
@@ -52,7 +54,7 @@
             <label>La máquina "Enigma" fue usada en la Segunda Guerra Mundial por los militares de Alemania con el propósito de evitar que la información confidencial de sus movimientos y estrategias de ataque se filtraran al público. </label>
           </p>
           <div>
-            <img src="https://www.eldiario.es/turing/enigma-alan_turing_EDIIMA20140206_0682_3.jpg" class="img-responsive">
+            <img alt="Imagen de la maquina Enigma" src="https://www.eldiario.es/turing/enigma-alan_turing_EDIIMA20140206_0682_3.jpg" class="img-responsive" />
           </div>
         </div>
         <div>

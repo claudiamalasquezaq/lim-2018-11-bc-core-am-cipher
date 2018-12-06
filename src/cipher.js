@@ -1,33 +1,33 @@
 window.cipher = {
 	encode: function(offset, string){
-		let cadena = "";
+		let chain = "";
 		for(let i = 0; i < string.length; i++){
 			let positionAsc = string.charCodeAt(i);
 			if (positionAsc === 32){
-				cadena = cadena + " ";
+				chain = chain + " ";
 			} else {
-				let fEncode = (positionAsc - 65 + offset) % 26 + 65;
-				let lettEncode = String.fromCharCode(fEncode);
-				cadena = cadena + lettEncode;	
+				let pEncode = (positionAsc - 65 + offset) % 26 + 65;
+				let lettEncode = String.fromCharCode(pEncode);
+				chain = chain + lettEncode;	
 			}
 		}
-	return cadena;	
+	return chain;	
 	},
 	decode: function(offset, string){
-		let cadena = "";
+		let chain = "";
 		for (let i = 0; i < string.length; i++){
 			let positionAsc = string.charCodeAt(i);
 			if (positionAsc === 32) {
-				cadena = cadena + " ";
+				chain = chain + " ";
 			} else {
 				let fDecode = (positionAsc - 65 - offset) % 26 + 65;
-				if (fDecode < 65){
-					fDecode = fDecode + 26;
+				if (pDecode < 65){
+					pDecode = pDecode + 26;
 				} 
-				let lettDecode = String.fromCharCode(fDecode);
-				cadena = cadena + lettDecode;
+				let lettDecode = String.fromCharCode(pDecode);
+				chain = chain + lettDecode;
 			}
 		}
-	return cadena;
+	return chain;
 	}
 };
